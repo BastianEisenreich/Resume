@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Select all menu links within the header menu
   const navLinks = document.querySelectorAll('.header_menu a');
 
-  // Function to hide all content sections
   function hideAllSections() {
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => {
@@ -10,15 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Attach click event to each navigation link
   navLinks.forEach(link => {
     link.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent the default link behavior
-
-      // Get the target section from the data-section attribute
+      event.preventDefault();
       const targetSection = this.getAttribute('data-section');
-      
-      // Hide all sections and then display the chosen one
+
+      // Optionally, update active class for styling
+      navLinks.forEach(link => link.classList.remove('active'));
+      this.classList.add('active');
+
       hideAllSections();
       const section = document.getElementById(targetSection);
       if (section) {
