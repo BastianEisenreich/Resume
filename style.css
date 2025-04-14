@@ -430,3 +430,9 @@ ul {
 		float: left;
 		padding-left: 40px;
 	}
+	.course-skills {
+		margin-left: 30px; /* Adjust the left margin */
+		margin-right: 20px; /* Adjust the right margin */
+		margin-top: 10px; /* Adjust the top margin */
+		margin-bottom: 10px; /* Adjust the bottom margin */
+	  }
