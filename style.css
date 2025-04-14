@@ -194,11 +194,9 @@ ul {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		position: fixed; /* Makes the footer stick to the bottom */
-		bottom: 0;
-		left: 0;
 		background-color: rgb(32, 31, 31); /* Matches the background color */
 		color: #e4e3e8; /* Ensures text is visible */
+		margin-top: 20px; /* Adds spacing above the footer */
 	  }
 
 /* HEADER */
