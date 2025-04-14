@@ -138,20 +138,21 @@ a:focus {
 }
 
 ul {
-    list-style: none;
-    padding:0;
-    margin:0;
-}
-	li { 
-		padding-left: 1em; 
-		text-indent: -.7em;
-	}
-	li:before {
-		content: "• ";
-		color: #837c9a;
-		font-size: 20px;
-		padding-right: 8px;
-	}
+	list-style: none; /* Removes default browser styling */
+	padding: 0;
+	margin: 0;
+  }
+  li {
+	padding-left: 1.5em; /* Adds space for the bullet */
+	text-indent: -1.5em; /* Aligns the text with the bullet */
+	line-height: 1.5; /* Adjusts line spacing for readability */
+  }
+  li:before {
+	content: "• "; /* Adds a custom bullet */
+	color: #837c9a; /* Bullet color */
+	font-size: 20px; /* Bullet size */
+	padding-right: 8px; /* Space between bullet and text */
+  }
 
 /* Containers size */
 
